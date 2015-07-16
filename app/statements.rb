@@ -19,6 +19,10 @@ get '/statements' do
 end
 
 get '/statements/:id' do |id|
+  statements = settings.dataset.statements_by_name(id)
+  halt(404) if statements.empty?
+  latest = statements.sort_by(&:uri_version).last
+  redirect "/statements/#{latest.uri_name}/#{latest.uri_version}", 303
 end
 
 get '/statements/:id/:version' do |id, version|
