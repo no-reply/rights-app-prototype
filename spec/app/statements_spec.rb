@@ -27,20 +27,20 @@ describe 'routes' do
     end
   end
 
-  describe '/statements/{version}/{id}' do
+  describe '/statements/{id}/{version}' do
     it 'gives 404 if no statement has name' do
-      get '/statements/0.1/fk'
+      get '/statements/fk/0.1'
       expect(last_response.status).to eq 404
     end
 
     it 'gives 404 if no statement has id' do
-      get '/statements/10000.01/ic-permission'
+      get '/statements/ic/10000.01'
       expect(last_response.status).to eq 404
     end
 
     context 'with matching statement' do
       it 'responds ok' do
-        get '/statements/0.0/ic-permission'
+        get '/statements/ic/0.0'
         expect(last_response).to be_ok
       end
     end
