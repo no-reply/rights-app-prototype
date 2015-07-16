@@ -1,3 +1,27 @@
- <h1><%= statement.prefLabel.first %></h1>
- <h2><%= statement.rdf_subject %></h2>
- <p><%= statement.definition.first %></p>
+<html>
+	<head>
+		<title><%= statement.prefLabel.first %></title>
+		<style>
+		h1, h2 {
+			color: black;
+		}		
+		
+		p, li {
+			color : #999999;
+		}
+		
+		#wrapper {
+			width :75%;
+			margin-left:auto;
+			margin-top: 30px;
+			margin-right: auto;
+		}
+	</style>
+	</head>
+	<body>
+		<div id=wrapper>
+			<h1><%= statement.prefLabel.first %></h1>
+			<p><%= (statement.definition.first).gsub(/\n/, '<br/>') %></p>
+		</div>
+	</body>
+</html>
