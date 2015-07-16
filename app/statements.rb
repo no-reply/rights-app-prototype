@@ -15,13 +15,13 @@ get '/' do
 end
 
 get '/statements' do
-  'blah'
+  # @todo: create list of all statements?
 end
 
 get '/statements/:id' do |id|
 end
 
-get '/statements/:version/:id' do |version, id|
+get '/statements/:id/:version' do |id, version|
   statements = settings.dataset.statements_by_name(id)
                .select { |s| s.uri_version == version }
   halt(404) if statements.empty?
@@ -29,4 +29,3 @@ get '/statements/:version/:id' do |version, id|
   statement = statements.first
   erb :statement, locals: { statement: statement }
 end
-
