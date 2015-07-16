@@ -27,7 +27,6 @@ get '/statements/:version/:id' do |version, id|
   halt(404) if statements.empty?
   # @todo: return 5xx if multiple matching statements are found?
   statement = statements.first
-  erb :statement, locals: { uri: statement.rdf_subject,
-                            definition: statement.definition.first } 
+  erb :statement, locals: { statement: statement }
 end
 
