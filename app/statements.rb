@@ -29,3 +29,9 @@ get '/statements/:id/:version' do |id, version|
   halt(404) if statement.nil?
   erb :statement, locals: { statement: statement }
 end
+
+# 404 Error!
+# @todo add a proper "no statement" template
+not_found do
+  'statement not found'
+end
