@@ -19,13 +19,19 @@ get '/statements' do
 end
 
 get '/statements/:id' do |id|
+  latest = settings.dataset.statements_by_name(id).latest_version
+  halt(404) if latest.nil?
+  redirect "/statements/#{latest.uri_name}/#{latest.uri_version}", 303
 end
 
 get '/statements/:id/:version' do |id, version|
-  statements = settings.dataset.statements_by_name(id)
-               .select { |s| s.uri_version == version }
-  halt(404) if statements.empty?
-  # @todo: return 5xx if multiple matching statements are found?
-  statement = statements.first
+  statement = settings.dataset.statements_by_name(id).get_version(version)
+  halt(404) if statement.nil?
   erb :statement, locals: { statement: statement }
+end
+
+# 404 Error!
+# @todo add a proper "no statement" template
+not_found do
+  'statement not found'
 end

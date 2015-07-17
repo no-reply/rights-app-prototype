@@ -1,0 +1,41 @@
+<http://rightsstatements.org/vocab/0.0/ic> a <http://purl.org/dc/terms/RightsStatement>;
+   <http://purl.org/dc/elements/1.1/identifier> "InC";
+   <http://purl.org/dc/terms/creator> <http://rightsstatements.org/vocab/0.0/irswg>;
+   <http://purl.org/dc/terms/hasVersion> "0.0";
+   <http://purl.org/dc/terms/modified> "2015-07-15";
+   <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.europeana.eu/rights/rr-f/>;
+   <http://www.w3.org/2004/02/skos/core#definition> """This item is protected by copyright and/or related rights.
+
+You are free to use this item in any way that is permitted by the copyright and related rights legislation that applies to you.
+
+For other uses you need to obtain permission from the rightsholders.
+
+Notices:
+
+* Unless expressly stated otherwise, the organisation that has made this item available makes no warranties about the item. You are responsible for your own use.
+* You may find additional information about the copyright status of the item on the website of the organisation that has made the item available."""@en;
+   <http://www.w3.org/2004/02/skos/core#inScheme> <http://rightsstatements.org/vocab/0.0/>;
+   <http://www.w3.org/2004/02/skos/core#prefLabel> "In Copyright"@en;
+   <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://id.loc.gov/vocabulary/preservation/copyrightStatus/cpr>;
+   <http://www.w3.org/2004/02/skos/core#scopeNote> "This rights statement can be used for any work that is in copyright. Using this statement implies that the the organisation making this item available has determined that the item is in copyright and; is either the copyright holder, has obtained permission to make available the work from the copyright holder or, makes the work available under an exception or limitation to copyright (including fair use) that entitles it to make the work available."@en .
+
+<http://rightsstatements.org/vocab/0.1/ic> a <http://purl.org/dc/terms/RightsStatement>;
+   <http://purl.org/dc/elements/1.1/identifier> "InC";
+   <http://purl.org/dc/terms/creator> <http://rightsstatements.org/vocab/0.0/irswg>;
+   <http://purl.org/dc/terms/hasVersion> "0.1";
+   <http://purl.org/dc/terms/modified> "2015-07-15";
+   <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.europeana.eu/rights/rr-f/>;
+   <http://www.w3.org/2004/02/skos/core#definition> """This item is protected by copyright and/or related rights.
+
+You are free to use this item in any way that is permitted by the copyright and related rights legislation that applies to you.
+
+For other uses you need to obtain permission from the rightsholders.
+
+Notices:
+
+* Unless expressly stated otherwise, the organisation that has made this item available makes no warranties about the item. You are responsible for your own use.
+* You may find additional information about the copyright status of the item on the website of the organisation that has made the item available."""@en;
+   <http://www.w3.org/2004/02/skos/core#inScheme> <http://rightsstatements.org/vocab/0.0/>;
+   <http://www.w3.org/2004/02/skos/core#prefLabel> "In Copyright"@en;
+   <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://id.loc.gov/vocabulary/preservation/copyrightStatus/cpr>;
+   <http://www.w3.org/2004/02/skos/core#scopeNote> "This rights statement can be used for any work that is in copyright. Using this statement implies that the the organisation making this item available has determined that the item is in copyright and; is either the copyright holder, has obtained permission to make available the work from the copyright holder or, makes the work available under an exception or limitation to copyright (including fair use) that entitles it to make the work available."@en .
