@@ -16,12 +16,23 @@
 			margin-top: 30px;
 			margin-right: auto;
 		}
+		
+		.additionalInformation {
+			color : #862303;
+		}
 	</style>
 	</head>
 	<body>
 		<div id=wrapper>
 			<h1><%= statement.prefLabel.first %></h1>
+			<%if params.has_key?('expires') && statement.identifier.first == 'NoC-CR' %>
+			 <p class=additionalInformation>This statement expires on <%= params['expires'] %></p>
+			<% end %>
+			<%if params.has_key?('EU-OW-database-URL') && statement.identifier.first == 'InC-OW-EU' %>
+			 <p  class=additionalInformation>According to the European <a href="<%= params['EU-OW-database-URL'] %>">OHIM database</a>.</p>
+			<% end %>
 			<p><%= (statement.definition.first).gsub(/\n/, '<br/>') %></p>
+			
 		</div>
 	</body>
 </html>
