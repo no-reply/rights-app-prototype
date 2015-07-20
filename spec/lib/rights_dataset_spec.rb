@@ -44,12 +44,12 @@ describe RightsDataset do
 
   describe '#statements_by_name' do
     it 'gives a non-empty result' do
-      expect(subject.statements_by_name('ic')).not_to be_empty
+      expect(subject.statements_by_name('InC')).not_to be_empty
     end
 
     it 'gives statements by name' do
-      subject.statements_by_name('ic').each do |s|
-        expect(s.uri_name).to eq 'ic'
+      subject.statements_by_name('InC').each do |s|
+        expect(s.uri_name).to eq 'InC'
       end
     end
   end

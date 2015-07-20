@@ -36,15 +36,15 @@ describe 'routes' do
     end
 
     it 'gives status code 303' do
-      get '/statements/ic'
+      get '/statements/InC'
       expect(last_response)
         .to have_attributes status: 303
     end
 
     it 'redirects to newest version of statement' do
-      get '/statements/ic'
+      get '/statements/InC'
       expect(last_response.header['Location'])
-        .to end_with '/statements/ic/0.1'
+        .to end_with '/statements/InC/0.1'
     end
   end
 
@@ -55,13 +55,13 @@ describe 'routes' do
     end
 
     it 'gives 404 if no statement has id' do
-      get '/statements/ic/10000.01'
+      get '/statements/InC/10000.01'
       expect(last_response.status).to eq 404
     end
 
     context 'with matching statement' do
       it 'responds ok' do
-        get '/statements/ic/0.0'
+        get '/statements/InC/0.0'
         expect(last_response).to be_ok
       end
     end
