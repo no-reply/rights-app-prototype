@@ -1,4 +1,4 @@
-<http://rightsstatements.org/vocab/0.0/ic> a <http://purl.org/dc/terms/RightsStatement>;
+<http://rightsstatements.org/vocab/0.0/InC> a <http://purl.org/dc/terms/RightsStatement>;
    <http://purl.org/dc/elements/1.1/identifier> "InC";
    <http://purl.org/dc/terms/creator> <http://rightsstatements.org/vocab/0.0/irswg>;
    <http://purl.org/dc/terms/hasVersion> "0.0";
@@ -19,7 +19,7 @@ Notices:
    <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://id.loc.gov/vocabulary/preservation/copyrightStatus/cpr>;
    <http://www.w3.org/2004/02/skos/core#scopeNote> "This rights statement can be used for any work that is in copyright. Using this statement implies that the the organisation making this item available has determined that the item is in copyright and; is either the copyright holder, has obtained permission to make available the work from the copyright holder or, makes the work available under an exception or limitation to copyright (including fair use) that entitles it to make the work available."@en .
 
-<http://rightsstatements.org/vocab/0.1/ic> a <http://purl.org/dc/terms/RightsStatement>;
+<http://rightsstatements.org/vocab/0.1/InC> a <http://purl.org/dc/terms/RightsStatement>;
    <http://purl.org/dc/elements/1.1/identifier> "InC";
    <http://purl.org/dc/terms/creator> <http://rightsstatements.org/vocab/0.0/irswg>;
    <http://purl.org/dc/terms/hasVersion> "0.1";
