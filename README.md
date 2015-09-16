@@ -16,4 +16,4 @@ To run the prototype checkout this repository, then run:
 Licence
 --------
 
-Copyright 2015, All Rights Reserved
+[EUPL v1.1](LICENSE.md)
